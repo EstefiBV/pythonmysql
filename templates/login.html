@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+</head>
+
+<body>
+    <div class="login-box">
+        <h2 id="titulo">Iniciar Sesión</h2>
+
+        <form id="formLogin">
+            <label for="usuario">Usuario: </label>
+            <input type="text" id="usuario" name="usuario">
+            <label for="clave">Contraseña: </label>
+            <input type="password" id="clave" name="clave">
+
+            <button type="submit" class="boton">Enviar</button>
+            <!-- Botón para ir a registro -->
+            <button class="boton" style="margin-top: 10px;" onclick="window.location.href='/registro'">
+                Registrarse
+            </button>
+        </form>
+        <pre id="terminal"></pre> <!-- Aquí mostraremos los logs -->
+    </div>
+
+    <div id="mensaje" class="mensaje"></div>
+    <script src="{{url_for('static', filename='loginscript.js')}}"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD Usuarios</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <h2>CRUD de Usuarios</h2>
+
+    <div>
+        <input type="text" id="usuario" placeholder="Usuario">
+        <input type="text" id="clave" placeholder="Clave">
+        <button id="crear">Crear Usuario</button>
+    </div>
+
+    <div id="mensaje" class="mensaje"></div>
+
+    <table border="1" id="tablaUsuarios">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Usuario</th>
+                <th>Clave</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Los usuarios se llenarán con JS -->
+        </tbody>
+    </table>
+
+    <script src="{{ url_for('static', filename='usuarioscript.js') }}"></script>
+</body>
+
+</html>

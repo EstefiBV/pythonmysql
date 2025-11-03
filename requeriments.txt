@@ -1,0 +1,8 @@
+pip install flask
+python -m pip install flask //a veces si tenemos varias versiones de python
+py -m pip install flask
+pip install mysql-connector-python
+python -m pip install mysql-connector-python //Si usas varias versiones de Python, puedes forzarlo así
+py -m pip install mysql-connector-python //otra opción
+pip show mysql-connector-python //verifica la instalación
+
